@@ -1,2 +1,2 @@
 # otus-hw01
-First homework for Otus.Ru project
+Otus.Ru Java course homework
