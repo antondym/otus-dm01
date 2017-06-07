@@ -1,2 +1,8 @@
-# otus-java-2017-06-antond
-Otus.Ru Java course homework
+# Домашние задания по курсу "Разработчик Java" в Otus.ru
+Группа 2017-06
+
+### Автор 
+Anton Dymovskoy (Антон Дымовской)
+
+anton.dymovskoy@gmail.com
+
