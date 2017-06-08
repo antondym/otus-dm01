@@ -5,4 +5,3 @@
 Anton Dymovskoy (Антон Дымовской)
 
 anton.dymovskoy@gmail.com
-
