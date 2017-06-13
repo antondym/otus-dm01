@@ -4,7 +4,7 @@ jdk:
 script:
   - cd l2.sizes
   - mvn package
-  - java -jar target/l2.sizes.jar
+  - java -XX:-UseTLAB -jar target/l2.sizes.jar
   - cd ../l1.maven
   - mvn package
   
