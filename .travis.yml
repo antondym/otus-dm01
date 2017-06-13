@@ -1,9 +1,9 @@
 language: java
 script:
-  - cd l1.maven
-  - mvn package
-  - cd l2.sizes
+  - cd ../l2.sizes
   - mvn package
   - java -jar target/l2.sizes.jar
+  - cd l1.maven
+  - mvn package
   
   
