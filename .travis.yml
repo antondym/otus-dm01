@@ -1,5 +1,11 @@
 language: java
+jdk:
+  - oraclejdk8
 script:
-  - cd l1.maven
+  - cd l2.sizes
   - mvn package
+  - java -XX:-UseTLAB -jar target/l2.sizes.jar
+  - cd ../l1.maven
+  - mvn package
+  
   
