@@ -88,7 +88,7 @@ public class MainClass {
             String[] array = new String[size];
             fillArray(array, String::new);
             return array;
-        }, "new string[]");
+        }, "new String[]");
         runForContainer((size) -> {
             ArrayList<Object> arrayList = new ArrayList<Object>();
             for (int i = 0; i < size; i++)
