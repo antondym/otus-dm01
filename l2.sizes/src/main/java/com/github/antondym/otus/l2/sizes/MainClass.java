@@ -90,13 +90,13 @@ public class MainClass {
             return array;
         }, "new String[]");
         runForContainer((size) -> {
-            ArrayList<Object> arrayList = new ArrayList<Object>();
+            ArrayList<Object> arrayList = new ArrayList<>();
             for (int i = 0; i < size; i++)
                 arrayList.add(new Object());
             return arrayList;
         }, "ArrayList");
         runForContainer((size) -> {
-            HashSet<Object> hashSet = new HashSet<Object>();
+            HashSet<Object> hashSet = new HashSet<>();
             for (int i = 0; i < size; i++)
                 hashSet.add(new Object());
             return hashSet;
