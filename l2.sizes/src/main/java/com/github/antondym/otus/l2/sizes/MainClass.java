@@ -80,14 +80,15 @@ public class MainClass {
     }
 
     public static void main(String[] args) {
-        runForObject(() -> new Object(), "Empty object");
-        runForObject(() -> new String(), "Empty string");
-        runForContainer((size) -> new int[size], "Integer array");
+        runForObject(() -> new Object(), "new Object()");
+        runForObject(() -> new String(), "new String()");
+        runForObject(() -> new String(new char[] {}), "new String(new char[] {})");
+        runForContainer((size) -> new int[size], "new int[]");
         runForContainer((size) -> {
             String[] array = new String[size];
             fillArray(array, String::new);
             return array;
-        }, "String array");
+        }, "new string[]");
         runForContainer((size) -> {
             ArrayList<Object> arrayList = new ArrayList<Object>();
             for (int i = 0; i < size; i++)
