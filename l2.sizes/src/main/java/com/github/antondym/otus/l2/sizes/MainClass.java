@@ -12,7 +12,7 @@ public class MainClass {
     private static final int ARRAY_SIZE = 10_000;
     private static final Runtime RUNTIME = Runtime.getRuntime();
 
-    private static final int[] SIZES = {0, 1, 10, 20, 100};
+    private static final int[] SIZES = {0, 1, 10, 20, 100, 1000};
 
     static class Measurement {
         long _size;
@@ -83,7 +83,14 @@ public class MainClass {
         runForObject(() -> new Object(), "new Object()");
         runForObject(() -> new String(), "new String()");
         runForObject(() -> new String(new char[] {}), "new String(new char[] {})");
-        runForContainer((size) -> new int[size], "new int[]");
+        runForContainer((size) -> new byte[size], "new byte[]");
+        runForContainer((size) -> new short[size], "new short[]");
+        runForContainer((size) -> new int [size], "new int[]");
+        runForContainer((size) -> new long[size], "new long[]");
+        runForContainer((size) -> new boolean[size], "new boolean[]");
+        runForContainer((size) -> new char[size], "new char[]");
+        runForContainer((size) -> new float[size], "new float[]");
+        runForContainer((size) -> new double[size], "new double[]");
         runForContainer((size) -> {
             String[] array = new String[size];
             fillArray(array, String::new);
