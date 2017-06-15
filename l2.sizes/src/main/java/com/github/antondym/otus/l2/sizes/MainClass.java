@@ -73,6 +73,8 @@ public class MainClass {
         long before = RUNTIME.freeMemory();
         Object[] array = new Object[ARRAY_SIZE];
         fillArray(array, supplier);
+
+        stabilizeMemory();
         long after = RUNTIME.freeMemory();
         long size = (before - after) / array.length;
 
@@ -80,6 +82,9 @@ public class MainClass {
     }
 
     public static void main(String[] args) {
+        System.out.println(System.getProperty("java.version"));
+        System.out.println();
+
         runForObject(() -> new Object(), "new Object()");
         runForObject(() -> new String(), "new String()");
         runForObject(() -> new String(new char[] {}), "new String(new char[] {})");
