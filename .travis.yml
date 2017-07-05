@@ -4,7 +4,7 @@ jdk:
 script:
   - cd l5.testframework
   - mvn package
-  - java -jar target/l5.testframework-1.0-SNAPSHOT.jar
+  - java -jar target/l5.testframework.jar
   - cd ../l3.containers
   - mvn package
   - cd ../l2.sizes
