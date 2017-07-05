@@ -1,4 +1,4 @@
-package com.github.antondym.l5.testframework;
+package com.github.antondym.otus.l5.testframework;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

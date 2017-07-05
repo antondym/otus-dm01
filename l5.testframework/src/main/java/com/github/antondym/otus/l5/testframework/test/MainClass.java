@@ -1,6 +1,6 @@
-package com.github.antondym.l5.testframework.test;
+package com.github.antondym.otus.l5.testframework.test;
 
-import com.github.antondym.l5.testframework.TestFramework;
+import com.github.antondym.otus.l5.testframework.TestFramework;
 
 public class MainClass {
     public static void main(String[] args) {

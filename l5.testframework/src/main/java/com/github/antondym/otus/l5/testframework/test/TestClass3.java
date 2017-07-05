@@ -1,8 +1,8 @@
-package com.github.antondym.l5.testframework.test;
+package com.github.antondym.otus.l5.testframework.test;
 
-import com.github.antondym.l5.testframework.After;
-import com.github.antondym.l5.testframework.Before;
-import com.github.antondym.l5.testframework.Test;
+import com.github.antondym.otus.l5.testframework.After;
+import com.github.antondym.otus.l5.testframework.Before;
+import com.github.antondym.otus.l5.testframework.Test;
 
 public class TestClass3 {
     @Before
