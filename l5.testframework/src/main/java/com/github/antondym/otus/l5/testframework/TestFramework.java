@@ -36,8 +36,6 @@ public class TestFramework {
     public static void run(Class<?>... testClasses) {
         try {
             for (Class<?> testClass : testClasses) {
-                Object instance = testClass.newInstance();
-
                 Method[] beforeMethods = findMethods(testClass, Before.class);
                 Method[] afterMethods = findMethods(testClass, After.class);
 
@@ -59,6 +57,8 @@ public class TestFramework {
 
                 for (Method method : methods) {
                     if (method.getAnnotation(Test.class) != null) {
+                        Object instance = testClass.newInstance();
+
                         if (method.getParameterCount() > 0)
                             throw new InvalidTestClassException("@Test method " + method.getName() + " should not have parameters");
 
